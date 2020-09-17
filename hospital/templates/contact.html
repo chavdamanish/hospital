@@ -1,0 +1,47 @@
+{% extends 'navigationbar.html' %}
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>This is About</title>
+
+</head>
+{% block body %}
+<body>
+<style>
+    .mydivstyle:hover
+     {
+        box-shadow:0 0 20px 0 rgba(0,0,0,0.3);
+        transform:translateY(-10px);
+     }
+</style>
+<div class="container" style="margin-top:30px;color:darkblue">
+    <h1 class="text-center">Contact to Hospital !!!</h1>
+    <br><br>
+    <div class="row mt-5 text-center">
+        <div class="col-lg-3 col-sm-6 mydivstyle">
+            <h4><i class="fas fa-mobile"> </i> Mobile No : </h4>
+            <p class="mt-3 font-weight-bold"><a href="tel:+91 9586001060">+91 9586001060</a> </p>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 mydivstyle">
+            <h4><i class="fas fa-envelope"> </i> Email Id : </h4>
+            <p class="mt-3 font-weight-bold"><a href="mailto:chavdaking111@gmail.com">chavdaking111@gmail.com</a> </p>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 mydivstyle">
+            <h4><i class="fas fa-address-card"> </i> Office Address : </h4>
+            <p class="mt-3 font-weight-bold"><a href="http://maps.google.com/maps?q=rajkot+gujarat+india">Rajkot, Gujarat, India</a> </p>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 mydivstyle">
+            <h4><i class="fas fa-history"></i> Office Hours : </h4>
+            <p class="mt-3 font-weight-bold text-danger">9:00 AM to 7:00 PM </p>
+        </div>
+
+    </div>
+</div>
+</body>
+{% endblock %}
+</html>

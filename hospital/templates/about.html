@@ -1,0 +1,28 @@
+{% extends 'navigationbar.html' %}
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>This is About</title>
+</head>
+{% block body %}
+<div class="container" style="margin-top:30px;color:darkblue">
+    <h2 class="text-center">About Us</h2><br><br><br>
+
+    <div class="row">
+        <div class="col-sm-4 text-center">
+            <img src="{% static 'about.png' %}" height="300px" width="350px" class="img-responsive">
+        </div>
+
+        <div class="col-sm-8 font-weight-bold mt-5">
+            Hello Friends...<br><br>
+                This is a simple Hospital Management Project developed by Manish Chavda using HTML, CSS,JavaScript,Bootstrap,Python,Django and Sqlite.
+        </div>
+    </div>
+</div>
+<body>
+
+</body>
+{% endblock %}
+</html>
